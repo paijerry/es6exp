@@ -1,4 +1,13 @@
-# es6exp
+# How to use
+
+```
+git clone https://github.com/paijerry/es6exp.git
+cd es6exp
+npm install
+npm start
+```
+
+# es6exp note
 
 https://www.udemy.com/es6-in-depth/?siteID=BoHFIyu6APU-yKuxvapNxuK4ViVi4Ylo1w&LSNPUBID=BoHFIyu6APU
 
