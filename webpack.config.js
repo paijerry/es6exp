@@ -1,3 +1,5 @@
+var HtmlWebpackPlugin = require('html-webpack-plugin')
+
 module.exports = {
     entry: ['./app/index.js'],
     output: {
@@ -17,5 +19,10 @@ module.exports = {
         port: 3000,
         contentBase: './build',
         inline: true
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './build/index.html'
+        })
+    ]
 }
