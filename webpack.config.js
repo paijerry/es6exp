@@ -1,4 +1,4 @@
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var HtmlWebpackPlugin = require('html-webpack-plugin') // html hot load plugin
 
 module.exports = {
     entry: ['./app/index.js'],
@@ -12,17 +12,20 @@ module.exports = {
                 loader: 'babel-loader',
                 test: /\.js$/,
                 exclude: /node_modules/
+            }, {
+                test: /\.css$/, // Only .css files
+                loader: 'style-loader!css-loader' // Run both loaders
             }
         ]
     },
     devServer: {
         port: 3000,
-        contentBase: './build',
+        contentBase: './src',
         inline: true
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './build/index.html'
+            template: './src/index.html' // html hot load template
         })
     ]
 }
