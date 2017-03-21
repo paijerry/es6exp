@@ -1,2 +1,2 @@
-require("../css/style.css")
+require("../build/style.css")
 console.log("hello world!")

@@ -20,12 +20,12 @@ module.exports = {
     },
     devServer: {
         port: 3000,
-        contentBase: './src',
+        contentBase: './build',
         inline: true
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: './src/index.html' // html hot load template
+            template: './build/index.html' // html hot load template
         })
     ]
 }
